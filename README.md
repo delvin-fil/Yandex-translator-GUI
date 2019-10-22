@@ -53,14 +53,14 @@ sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ### IceWm
 - Открыть файл $HOME/.icewm/keys
 - Добавить строку<br> 
-	```key "Ctrl+1" /home/delvin/codding/translat/transgtk.py```
+	```key "Ctrl+1" yatrans-gtk```
 - Перезапусть IceWM<br>
 	```Меню >  Выход... > Перезапуск IceWM```
 
 ### Lumina
 - Меню > Настройки > Настройки рабочего стола > Горячие клавиши > Расширенный редактор
 - Добавить строку<br>
-	```Control 1 :Exec qterminal```
+	```Control 1 :Exec yatrans-gtk```
 
 ### Gmome 3
 - Меню > параметры системы > клавиатура > комбинации клавиш
