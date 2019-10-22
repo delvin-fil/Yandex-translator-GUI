@@ -5,6 +5,10 @@
 Графический интерфейс яндекс-переводчика.
 
 ![screenshot](https://github.com/delvin-fil/Yandex-translator-GUI/blob/master/screenshot.png)
+
+### Требования
+API-KEY для yandex API
+- Получение API-KEY на https://tech.yandex.com/translate/
 ### Зависимости
 1. **Python 3.6+**
 2. Библиотека **pygobject**
