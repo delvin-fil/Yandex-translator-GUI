@@ -1,4 +1,4 @@
-#!/home/delvin/.local/bin/python3.8
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 import sys
 import requests
