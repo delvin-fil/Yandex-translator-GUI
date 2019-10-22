@@ -11,7 +11,9 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 CURRDIR = os.path.dirname(os.path.abspath(__file__))
-ICON = os.path.join(CURRDIR, 'yandex-48.xpm')
+print (CURRDIR)
+# could be PNG or SVG as well
+ICON = os.path.join(CURRDIR, 'python3.xpm')
 
 headers = {
     'User-Agent': ('Mozilla/5.0 (Windows NT 6.0; rv:14.0) Gecko/20100101 '
@@ -29,7 +31,7 @@ headers = {
 }
 URLDETECT = "https://translate.yandex.net/api/v1.5/tr.json/detect"
 URLTRANS = "https://translate.yandex.net/api/v1.5/tr.json/translate"
-KEY = "you-API-key"
+KEY = "trnsl.1.1.20191018T044543Z.47802497546c44b3.a3320688fe20c6d7ec26f5a0a76d1930ba9696ac"
 
 def clip():
     clipboard = Gtk.Clipboard.get(Gdk.SELECTION_PRIMARY)
@@ -63,7 +65,7 @@ def translate():
 
 class TextViewWindow(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title=f"Yandex Translator {detect()}")
+        Gtk.Window.__init__(self, title=f"Translate {detect()}")
         self.set_default_size(1000, 350)
         self.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
         self.grid = Gtk.Grid()
@@ -92,7 +94,7 @@ class TextViewWindow(Gtk.Window):
         self.grid.attach(scrolledwindow, 0, 0, 2, 1)
         self.textview = Gtk.TextView()
         self.textbuffer = self.textview.get_buffer()
-        self.textbuffer.set_text(f"{translate()}")
+        self.textbuffer.set_text(f"{translate()}\n\n © Yandex\n http://translate.yandex.com")
         scrolledwindow.add(self.textview)
         self.textview.set_wrap_mode(Gtk.WrapMode.WORD)
         self.tag_bold = self.textbuffer.create_tag("bold",
@@ -105,6 +107,5 @@ class TextViewWindow(Gtk.Window):
 
 win = TextViewWindow()
 win.connect("destroy", Gtk.main_quit)
-#win.set_icon_from_file(ICON)
 win.show_all()
 Gtk.main()
