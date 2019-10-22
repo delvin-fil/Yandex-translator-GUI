@@ -3,6 +3,7 @@
 
 Яндекс переводчик на языке Python.
 Графический интерфейс яндекс-переводчика.
+
 ![screenshot](https://github.com/delvin-fil/Yandex-translator-GUI/blob/master/screenshot.png)
 ### Зависимости
 1. **Python 3.6+**
