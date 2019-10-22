@@ -75,14 +75,14 @@ chmod +x yatrans-gtk.py
 ### IceWm
 - Открыть файл $HOME/.icewm/keys
 - Добавить строку<br> 
-	```key "Ctrl+1" /path_to/yatrans-gtk```
+	```key "Ctrl+1" /path_to/yatrans-gtk.py```
 - Перезапусть IceWM<br>
 	```Меню >  Выход... > Перезапуск IceWM```
 
 ### Lumina
 - Меню > Настройки > Настройки рабочего стола > Горячие клавиши > Расширенный редактор
 - Добавить строку<br>
-	```Control 1 :Exec /path_to/yatrans-gtk```
+	```Control 1 :Exec /path_to/yatrans-gtk.py```
 
 ### Gmome 3
 - Меню > параметры системы > клавиатура > комбинации клавиш
