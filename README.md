@@ -1,12 +1,14 @@
-# Yandex translator GUI
+# Yandex translator GUI 
+## Python and GTK 3
 
+Яндекс переводчик на языке Python.
 Графический интерфейс яндекс-переводчика.
 ![screenshot](https://github.com/delvin-fil/Yandex-translator-GUI/blob/master/screenshot.png)
 ### Зависимости
 1. **Python 3.6+**
 2. Библиотека **pygobject**
 3. Библиотека **requests**
-### Установка зависимостей:
+### Установка зависимостей
 #### Ubuntu/Mint/Debian:
 ```shell
 sudo apt-get install python3.6 python3-pip python3-gi python3-gi-cairo gir1.2-gtk-3.0
@@ -35,4 +37,12 @@ pip3.6 install --user requests
 ```shell
 sudo USE="cairo" PYTHON_TARGETS="python2_7 python3_6" emerge dev-python/pygobject -av
 pip3.6 install --user requests
+```
+## Установка
+
+```
+git clone https://github.com/delvin-fil/Yandex-translator-GUI.git
+cd Yandex-translator-GUI
+chmod +x yatrans-gtk.py
+sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ```
