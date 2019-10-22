@@ -11,8 +11,6 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 CURRDIR = os.path.dirname(os.path.abspath(__file__))
-print (CURRDIR)
-# could be PNG or SVG as well
 ICON = os.path.join(CURRDIR, 'python3.xpm')
 
 headers = {
