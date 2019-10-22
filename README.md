@@ -19,10 +19,13 @@
 API-KEY для yandex API
 - Получение API-KEY на https://tech.yandex.com/translate/
 
+---
 ### Зависимости
 1. **Python 3.6+**
 2. Библиотека **pygobject**
 3. Библиотека **requests**
+
+---
 ### Установка зависимостей
 #### Ubuntu/Mint/Debian:
 ```shell
@@ -53,6 +56,8 @@ pip3.6 install --user requests
 sudo USE="cairo" PYTHON_TARGETS="python2_7 python3_6" emerge dev-python/pygobject -av
 pip3.6 install --user requests
 ```
+
+---
 ## Установка
 
 ```
@@ -62,6 +67,7 @@ chmod +x yatrans-gtk.py
 sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ```
 
+---
 ## Привязка переводчика к горячей клавише
 > Так как DE/WM существует довольно много, опишу лишь IceWM, Lumina и Gnome
 
