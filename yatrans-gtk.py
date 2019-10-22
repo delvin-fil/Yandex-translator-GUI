@@ -94,7 +94,7 @@ class TextViewWindow(Gtk.Window):
         self.grid.attach(scrolledwindow, 0, 0, 2, 1)
         self.textview = Gtk.TextView()
         self.textbuffer = self.textview.get_buffer()
-        self.textbuffer.set_text(f"{translate()}\n\n © Yandex\n http://translate.yandex.com")
+        self.textbuffer.set_text(f"{translate()}\n\n ©Yandex\n http://translate.yandex.com")
         scrolledwindow.add(self.textview)
         self.textview.set_wrap_mode(Gtk.WrapMode.WORD)
         self.tag_bold = self.textbuffer.create_tag("bold",
