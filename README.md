@@ -1,5 +1,5 @@
-# Yandex translator GUI 
-## Python and GTK 3
+# Яндекс переводчик для Linux GUI 
+## Python & GTK 3
 
 Яндекс переводчик на языке Python.
 Графический интерфейс яндекс-переводчика.
