@@ -66,7 +66,6 @@ pip3.6 install --user requests
 git clone https://github.com/delvin-fil/Yandex-translator-GUI.git
 cd Yandex-translator-GUI
 chmod +x yatrans-gtk.py
-sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ```
 
 ---
@@ -76,14 +75,14 @@ sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ### IceWm
 - Открыть файл $HOME/.icewm/keys
 - Добавить строку<br> 
-	```key "Ctrl+1" yatrans-gtk```
+	```key "Ctrl+1" /path_to/yatrans-gtk```
 - Перезапусть IceWM<br>
 	```Меню >  Выход... > Перезапуск IceWM```
 
 ### Lumina
 - Меню > Настройки > Настройки рабочего стола > Горячие клавиши > Расширенный редактор
 - Добавить строку<br>
-	```Control 1 :Exec yatrans-gtk```
+	```Control 1 :Exec /path_to/yatrans-gtk```
 
 ### Gmome 3
 - Меню > параметры системы > клавиатура > комбинации клавиш
