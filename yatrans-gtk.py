@@ -29,7 +29,7 @@ headers = {
 }
 URLDETECT = "https://translate.yandex.net/api/v1.5/tr.json/detect"
 URLTRANS = "https://translate.yandex.net/api/v1.5/tr.json/translate"
-KEY = "trnsl.1.1.20191018T044543Z.47802497546c44b3.a3320688fe20c6d7ec26f5a0a76d1930ba9696ac"
+KEY = "you-API-key"
 
 def clip():
     clipboard = Gtk.Clipboard.get(Gdk.SELECTION_PRIMARY)
