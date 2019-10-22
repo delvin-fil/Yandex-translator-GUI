@@ -105,6 +105,6 @@ class TextViewWindow(Gtk.Window):
 
 win = TextViewWindow()
 win.connect("destroy", Gtk.main_quit)
-win.set_icon_from_file(ICON)
+#win.set_icon_from_file(ICON)
 win.show_all()
 Gtk.main()
