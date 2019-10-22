@@ -4,6 +4,8 @@
 Яндекс переводчик на языке Python.
 Графический интерфейс яндекс-переводчика.
 
+Переводит со всех доступных в Яндексте языков на русский. С русского только на английский.
+
 ![screenshot](https://github.com/delvin-fil/Yandex-translator-GUI/blob/master/screenshot.png)
 
 ---
