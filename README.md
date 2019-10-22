@@ -46,3 +46,21 @@ cd Yandex-translator-GUI
 chmod +x yatrans-gtk.py
 sudo ln -s $PWD/yatrans-gtk.py /usr/local/bin/yatrans-gtk
 ```
+
+## Привязка переводчика к горячей клавише
+> Так как DE/WM существует довольно много, опишу лишь IceWM, Lumina и Gnome
+
+### IceWm
+- Открыть файл $HOME/.icewm/keys
+- Добавить строку<br> 
+	```key "Ctrl+1" /home/delvin/codding/translat/transgtk.py```
+- Перезапусть IceWM<br>
+	```Меню >  Выход... > Перезапуск IceWM```
+
+### Lumina
+- Меню > Настройки > Настройки рабочего стола > Горячие клавиши > Расширенный редактор
+- Добавить строку<br>
+	```Control 1 :Exec qterminal```
+
+### Gmome 3
+- Меню > параметры системы > клавиатура > комбинации клавиш
