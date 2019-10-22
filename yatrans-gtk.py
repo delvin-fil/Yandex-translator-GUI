@@ -63,7 +63,7 @@ def translate():
 
 class TextViewWindow(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title=f"Translate {detect()}")
+        Gtk.Window.__init__(self, title=f"Yandex Translator {detect()}")
         self.set_default_size(1000, 350)
         self.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
         self.grid = Gtk.Grid()
