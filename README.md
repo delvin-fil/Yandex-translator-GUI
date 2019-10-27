@@ -100,6 +100,6 @@ chmod +x yatrans-gtk.py
 - открыть файл $HOME/.config/awesome/rc.lua
 - Добавить строку<br>
 	```LUA
-	-- если следующая строка будет в конце ткеста, послденяя запятая не нужна
+	-- если следующая строка будет в конце текста, последняя запятая не нужна
 	awful.key({ "Mod1", }, "y", function() awful.spawn("sh -c $HOME/path/to/yatrans-gtk.py")end),
 	```
