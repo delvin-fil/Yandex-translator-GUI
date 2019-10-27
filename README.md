@@ -101,5 +101,5 @@ chmod +x yatrans-gtk.py
 - Добавить строку<br>
 	```LUA
 	-- если следующая строка будет в конце ткеста, послденяя запятая не нужна
-	awful.key({ "Mod1",     }, "y", function() awful.spawn("sh -c $HOME/path/to/yatrans-gtk.py")end),
+	awful.key({ "Mod1", }, "y", function() awful.spawn("sh -c $HOME/path/to/yatrans-gtk.py")end),
 	```
