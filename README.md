@@ -56,9 +56,15 @@ pip3.6 install --user requests
 #### Gentoo:
 ```shell
 sudo USE="cairo" PYTHON_TARGETS="python2_7 python3_6" emerge dev-python/pygobject -av
-pip3.6 install --user requests
+sudo emerge dev-python/requests -aqv
+pip3.6 install --user requests # для свежей версии модуля
 ```
-
+#### FreeBSD/DragonFly 
+информация от [Tupoll](https://github.com/tupoll)
+```shell
+pkg install pygobject3-common
+pkg install py36-requests
+```
 ---
 ## Установка
 
@@ -86,3 +92,11 @@ chmod +x yatrans-gtk.py
 
 ### Gmome 3
 - Меню > параметры системы > клавиатура > комбинации клавиш
+
+### Awesome
+Спасибо [Tupoll](https://github.com/tupoll) за предоставленную информацию<br>
+Комбинация клавиш **Alt**+**y** 
+
+- открыть файл $HOME/.config/awesome/rc.lua
+- Добавить строку<br>
+	```awful.key({ "Mod1",     }, "y",          function() awful.spawn("zsh -c $HOME/path/to/yatrans-gtk.py")end), ```
