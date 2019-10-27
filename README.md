@@ -94,7 +94,7 @@ chmod +x yatrans-gtk.py
 - Меню > параметры системы > клавиатура > комбинации клавиш
 
 ### Awesome
-Спасибо [Tupoll](https://github.com/tupoll) за предоставленную информацию<br>
+Спасибо [Tupoll](https://github.com/tupoll) за подсказку<br>
 Комбинация клавиш **Alt**+**y** 
 
 - открыть файл $HOME/.config/awesome/rc.lua
