@@ -99,4 +99,7 @@ chmod +x yatrans-gtk.py
 
 - открыть файл $HOME/.config/awesome/rc.lua
 - Добавить строку<br>
-	```awful.key({ "Mod1",     }, "y",          function() awful.spawn("zsh -c $HOME/path/to/yatrans-gtk.py")end), ```
+	```LUA
+	-- если следующая строка будет в конце ткеста, послденяя запятая не нужна
+	awful.key({ "Mod1",     }, "y",          function() awful.spawn("zsh -c $HOME/path/to/yatrans-gtk.py")end),
+	```
