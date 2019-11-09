@@ -76,7 +76,7 @@ chmod +x yatrans-gtk.py
 
 ---
 ## Привязка переводчика к горячей клавише
-> Так как DE/WM существует довольно много, опишу лишь IceWM, Lumina и Gnome
+> Так как DE/WM существует довольно много, опишу лишь IceWM, Lumina и Gnome<br>
 > добавлено Awesome
 
 ### IceWm
