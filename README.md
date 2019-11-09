@@ -77,6 +77,7 @@ chmod +x yatrans-gtk.py
 ---
 ## Привязка переводчика к горячей клавише
 > Так как DE/WM существует довольно много, опишу лишь IceWM, Lumina и Gnome
+> добавлено Awesome
 
 ### IceWm
 - Открыть файл $HOME/.icewm/keys
@@ -103,3 +104,4 @@ chmod +x yatrans-gtk.py
 	-- если следующая строка будет в конце текста, последняя запятая не нужна
 	awful.key({ "Mod1", }, "y", function() awful.spawn("sh -c $HOME/path/to/yatrans-gtk.py")end),
 	```
+ 
