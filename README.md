@@ -104,8 +104,8 @@ chmod +x yatrans-gtk.py
 	-- если следующая строка будет в конце текста, последняя запятая не нужна
 	awful.key({ "Mod1", }, "y", function() awful.spawn("sh -c $HOME/path/to/yatrans-gtk.py")end),
 	```
- ### UPD:
- Добавлен шрифт Menlo Regular указанный в коде
+ ### UPD
+ Добавлен шрифт Menlo Regular указанный в коде:
 ```python
  self.textview.modify_font(Pango.FontDescription('Menlo Regular 24'))
  ```
